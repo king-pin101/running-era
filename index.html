@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RunFlow</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:#f5f7fb;
+color:#333;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#ff5a5f;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+nav ul li a:hover{
+color:#ff5a5f;
+}
+
+/* HERO */
+
+.hero{
+height:80vh;
+background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url("https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+margin-top:10px;
+font-size:18px;
+}
+
+.hero button{
+margin-top:20px;
+padding:12px 30px;
+border:none;
+background:#ff5a5f;
+color:white;
+font-size:16px;
+border-radius:30px;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:#ff3b3f;
+}
+
+/* SECTIONS */
+
+section{
+padding:60px 8%;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+font-size:30px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:12px;
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* VIDEO */
+
+.video-container{
+max-width:800px;
+margin:auto;
+}
+
+video{
+width:100%;
+border-radius:12px;
+}
+
+/* FORMS */
+
+.form-wrapper{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+max-width:900px;
+margin:auto;
+}
+
+.form-box{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-box h3{
+margin-bottom:15px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+width:100%;
+padding:10px;
+border:none;
+background:#ff5a5f;
+color:white;
+border-radius:6px;
+margin-top:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff3b3f;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:35px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:10px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>RunFlow</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#account">Account</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<div>
+<h1>Run Your Best Life</h1>
+<p>Track your runs. Stay healthy. Feel the freedom.</p>
+<button>Start Running</button>
+</div>
+</div>
+
+<section id="gallery">
+<h2 class="title">Running Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5">
+
+<img src="https://images.unsplash.com/photo-1502904550040-7534597429ae">
+
+<img src="https://images.unsplash.com/photo-1546484959-f5c1c1c2b1b1">
+
+<img src="https://images.unsplash.com/photo-1486218119243-13883505764c">
+
+</div>
+</section>
+
+<section id="video">
+
+<h2 class="title">Running Motivation</h2>
+
+<div class="video-container">
+
+<video controls>
+<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+</video>
+
+</div>
+
+</section>
+
+<section id="account">
+
+<h2 class="title">Join RunFlow</h2>
+
+<div class="form-wrapper">
+
+<div class="form-box">
+<h3>Login</h3>
+
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+
+<button>Login</button>
+
+</div>
+
+<div class="form-box">
+<h3>Sign Up</h3>
+
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+
+<button>Create Account</button>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 RunFlow | Running Community</p>
+</footer>
+
+</body>
+</html>>
+</html>
